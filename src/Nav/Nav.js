@@ -8,15 +8,15 @@ let activeContact = '';
 class Nav extends React.Component {
 
   activeNavLink = () => {
-    let currentLocation = window.location.href;
+  let currentLocation = window.location.href;
 
-    if (currentLocation === "https://portfolio-5-currency-converter.firebaseapp.com/" || currentLocation === "https://portfolio-5-currency-converter.firebaseapp.com") {
+    if (currentLocation === "http://localhost:3002/" || currentLocation === "http://localhost:3002/") {
       activeMain = 'active';
     }
-    if (currentLocation === "https://portfolio-5-currency-converter.firebaseapp.com/about") {
+    if (currentLocation === "http://localhost:3002/about") {
       activeAbout = 'active';
     }
-    if (currentLocation === "https://portfolio-5-currency-converter.firebaseapp.com/contact") {
+    if (currentLocation === "http://localhost:3002/contact") {
       activeContact = 'active';
     }
   }
